@@ -32,7 +32,6 @@ printf "Identifying system configuration this may take ${RED}some${NC} time.....
 SSD=$(system_profiler SPSoftwareDataType SPNVMeDataType | grep "Model")
 printf "Identifying system configuration this may take ${RED}some${NC} time..................\r"
 GPU=$(system_profiler SPSoftwareDataType SPDisplaysDataType | grep "Model")
-printf ".\r"
 DISP=$(system_profiler SPSoftwareDataType SPDisplaysDataType | grep "Display Type")
 printf "Identifying system configuration this may take ${RED}some${NC} time...................\r"
 HEALTH=$(system_profiler SPSoftwareDataType SPPowerDataType | grep "Condition")
@@ -87,4 +86,4 @@ read -n 1 -r -s -p $'Press enter to continue...\n'
 
 diskutil verifyDisk /dev/disk$INPUT
 
-printf "To Securely Erase a Mac's ${RED}HDD${NC}. Please enter ${RED}diskutil secureErase 1 /dev/disk0${NC} from the ${RED}RECOVERY ENVIRONMENT${NC}. \n"
+printf "To Securely Erase a Mac's ${RED}HDD${NC}. Please enter ${RED}diskutil secureErase 1 /dev/disk0${NC} from the ${RED}RECOVERY ENVIRONMENT DO NOT USE THIS ON SSDs${NC}. \n"
