@@ -35,9 +35,8 @@ GPU=$(system_profiler SPSoftwareDataType SPDisplaysDataType | grep "Model")
 DISP=$(system_profiler SPSoftwareDataType SPDisplaysDataType | grep "Display Type")
 printf "Identifying system configuration this may take ${RED}some${NC} time...................\r"
 HEALTH=$(system_profiler SPSoftwareDataType SPPowerDataType | grep "Condition")
-printf "Identifying system configuration this may take ${RED}some${NC} time....................\r"
 CYC=$(system_profiler SPSoftwareDataType SPPowerDataType | grep "Cycle")
-printf "Identifying system configuration this may take ${RED}some${NC} time....................${RED}DONE!${NC}\n"
+printf "Identifying system configuration this may take ${RED}some${NC} time...................${RED}DONE!${NC}\n"
 sleep .5
 
 #Print Output
