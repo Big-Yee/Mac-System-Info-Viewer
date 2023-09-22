@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #Vars
 IDENT="NULL"
 CPU="NULL"
@@ -21,11 +22,15 @@ IDENT=$(system_profiler SPSoftwareDataType SPHardwareDataType | grep "Model Iden
 printf "Identifying system configuration this may take ${RED}some${NC} time....\r"
 CPU=$(sysctl -n machdep.cpu.brand_string)
 printf "Identifying system configuration this may take ${RED}some${NC} time.....\r"
+
 sleep .5
+
 printf "Identifying system configuration this may take ${RED}some${NC} time......\r"
 MEM=$(system_profiler SPSoftwareDataType SPHardwareDataType | grep "Memory")
 printf "Identifying system configuration this may take ${RED}some${NC} time........\r"
+
 sleep 1
+
 printf "Identifying system configuration this may take ${RED}some${NC} time.........\r"
 HDD=$(system_profiler SPSoftwareDataType SPSerialATADataType | grep "Model")
 printf "Identifying system configuration this may take ${RED}some${NC} time..........\r"
@@ -37,6 +42,7 @@ printf "Identifying system configuration this may take ${RED}some${NC} time.....
 HEALTH=$(system_profiler SPSoftwareDataType SPPowerDataType | grep "Condition")
 CYC=$(system_profiler SPSoftwareDataType SPPowerDataType | grep "Cycle")
 printf "Identifying system configuration this may take ${RED}some${NC} time...................${RED}DONE!${NC}\n"
+
 sleep .5
 
 #Print Output
@@ -65,6 +71,8 @@ printf "${RED}Battery Information;${NC}\n"
 echo $CYC
 echo $HEALTH
 
+sleep .5
+
 read -n 1 -r -s -p $'Press enter to continue...\n'
 
 echo "Installing Brew..."
@@ -72,6 +80,8 @@ echo "Installing Brew..."
 echo "Installing SmartMonTools..."
 brew install smartmontools && sudo smartctl
 printf "The command will now list all disk to view S.M.A.R.T Attributes of. ${RED}You will be asked to select one of these.${NC}\n"
+
+sleep .5
 
 read -n 1 -r -s -p $'Press enter to continue...\n'
 
@@ -81,8 +91,12 @@ read INPUT
 smartctl -a /dev/disk$INPUT
 echo "Disk Utility will now verify that disk. "
 
+sleep .5
+
 read -n 1 -r -s -p $'Press enter to continue...\n'
 
 diskutil verifyDisk /dev/disk$INPUT
+
+sleep.5
 
 printf "To Securely Erase a Mac's ${RED}HDD${NC}. Please enter ${RED}diskutil secureErase 1 /dev/disk0${NC} from the ${RED}RECOVERY ENVIRONMENT DO NOT USE THIS ON SSDs${NC}. \n"
