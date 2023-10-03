@@ -3,10 +3,12 @@
 #Vars
 IDENT="NULL"
 CPU="NULL"
+CPU_Cores="NULL"
 MEM="NULL"
 HDD="NULL"
 SSD="NULL"
 GPU="NULL"
+GPU_Cores="NULL"
 DISP="NULL"
 HEALTH="NULL"
 CYC="NULL"
@@ -21,6 +23,7 @@ printf "Identifying system configuration this may take ${RED}some${NC} time...\r
 IDENT=$(system_profiler SPSoftwareDataType SPHardwareDataType | grep "Model Identifier")
 printf "Identifying system configuration this may take ${RED}some${NC} time....\r"
 CPU=$(sysctl -n machdep.cpu.brand_string)
+CPU_Cores=$(sysctl -n hw.ncpu)
 printf "Identifying system configuration this may take ${RED}some${NC} time.....\r"
 
 sleep .5
@@ -37,6 +40,7 @@ printf "Identifying system configuration this may take ${RED}some${NC} time.....
 SSD=$(system_profiler SPSoftwareDataType SPNVMeDataType | grep "Model")
 printf "Identifying system configuration this may take ${RED}some${NC} time..................\r"
 GPU=$(system_profiler SPSoftwareDataType SPDisplaysDataType | grep "Model")
+GPU_Cores=$(system_profiler SPDisplaysDataType)
 DISP=$(system_profiler SPSoftwareDataType SPDisplaysDataType | grep "Display Type")
 printf "Identifying system configuration this may take ${RED}some${NC} time...................\r"
 HEALTH=$(system_profiler SPSoftwareDataType SPPowerDataType | grep "Condition")
@@ -49,6 +53,7 @@ sleep .5
 printf "${RED}System Information;${NC}\n"
 echo $IDENT
 echo $CPU
+echo $CPU_Cores
 echo $MEM
 printf "${RED}Storage;${NC}\n"
 if [ -z "$HDD" ];
@@ -65,6 +70,8 @@ else
 fi
 printf "${RED}GPU(s);${NC}\n"
 echo $GPU
+printf "${RED}GPU Core(s);${NC}\n"
+echo $GPU_Cores
 printf "${RED}Display(s);${NC}\n"
 echo $DISP
 printf "${RED}Battery Information;${NC}\n"
