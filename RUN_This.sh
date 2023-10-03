@@ -23,6 +23,7 @@ printf "Identifying system configuration this may take ${RED}some${NC} time...\r
 IDENT=$(system_profiler SPSoftwareDataType SPHardwareDataType | grep "Model Identifier")
 printf "Identifying system configuration this may take ${RED}some${NC} time....\r"
 CPU=$(sysctl -n machdep.cpu.brand_string)
+printf "${RED}CPU Core(s)${NC}\n"
 CPU_Cores=$(sysctl -n hw.ncpu)
 printf "Identifying system configuration this may take ${RED}some${NC} time.....\r"
 
