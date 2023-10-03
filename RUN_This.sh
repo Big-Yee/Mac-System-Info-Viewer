@@ -112,3 +112,7 @@ diskutil verifyDisk /dev/disk$INPUT
 sleep 0.5
 
 printf "To Securely Erase a Mac's ${RED}HDD${NC}. Please enter ${RED}diskutil secureErase 1 /dev/disk0${NC} from the ${RED}RECOVERY ENVIRONMENT DO NOT USE THIS ON SSDs${NC}. \n"
+
+#BETA
+#Install and use FIRREBASE
+#curl -sL https://firebase.tools | bash
