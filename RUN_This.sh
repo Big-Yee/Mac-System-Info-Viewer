@@ -2,6 +2,7 @@
 
 #Vars
 IDENT="NULL"
+SN="NULL"
 CPU="NULL"
 CPU_Cores="NULL"
 MEM="NULL"
@@ -21,6 +22,7 @@ NC="\033[0m"
 #ACTUALLY DOING SHIT
 printf "Identifying system configuration this may take ${RED}some${NC} time...\r"
 IDENT=$(system_profiler SPSoftwareDataType SPHardwareDataType | grep "Model Identifier")
+SN=$(system_profiler SPHardwareDataType)
 printf "Identifying system configuration this may take ${RED}some${NC} time....\r"
 CPU=$(sysctl -n machdep.cpu.brand_string)
 CPU_Cores=$(sysctl -n hw.ncpu)
@@ -52,6 +54,7 @@ sleep 0.5
 #Print Output
 printf "${RED}System Information;${NC}\n"
 echo $IDENT
+echo $SN
 echo $CPU
 printf "${RED}CPU Core(s)${NC}\n"
 echo $CPU_Cores
