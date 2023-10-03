@@ -26,7 +26,7 @@ CPU=$(sysctl -n machdep.cpu.brand_string)
 CPU_Cores=$(sysctl -n hw.ncpu)
 printf "Identifying system configuration this may take ${RED}some${NC} time.....\r"
 
-sleep .5
+sleep 0.5
 
 printf "Identifying system configuration this may take ${RED}some${NC} time......\r"
 MEM=$(system_profiler SPSoftwareDataType SPHardwareDataType | grep "Memory")
@@ -47,7 +47,7 @@ HEALTH=$(system_profiler SPSoftwareDataType SPPowerDataType | grep "Condition")
 CYC=$(system_profiler SPSoftwareDataType SPPowerDataType | grep "Cycle")
 printf "Identifying system configuration this may take ${RED}some${NC} time...................${RED}DONE!${NC}\n"
 
-sleep .5
+sleep 0.5
 
 #Print Output
 printf "${RED}System Information;${NC}\n"
@@ -80,7 +80,7 @@ printf "${RED}Battery Information;${NC}\n"
 echo $CYC
 echo $HEALTH
 
-sleep .5
+sleep 0.5
 
 read -n 1 -r -s -p $'Press enter to continue...\n'
 
@@ -90,7 +90,7 @@ echo "Installing SmartMonTools..."
 brew install smartmontools && sudo smartctl
 printf "The command will now list all disk to view S.M.A.R.T Attributes of. ${RED}You will be asked to select one of these.${NC}\n"
 
-sleep .5
+sleep 0.5
 
 read -n 1 -r -s -p $'Press enter to continue...\n'
 
@@ -100,12 +100,12 @@ read INPUT
 smartctl -a /dev/disk$INPUT
 echo "Disk Utility will now verify that disk. "
 
-sleep .5
+sleep 0.5
 
 read -n 1 -r -s -p $'Press enter to continue...\n'
 
 diskutil verifyDisk /dev/disk$INPUT
 
-sleep.5
+sleep 0.5
 
 printf "To Securely Erase a Mac's ${RED}HDD${NC}. Please enter ${RED}diskutil secureErase 1 /dev/disk0${NC} from the ${RED}RECOVERY ENVIRONMENT DO NOT USE THIS ON SSDs${NC}. \n"
