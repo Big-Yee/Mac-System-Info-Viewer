@@ -55,6 +55,7 @@ echo $IDENT
 echo $CPU
 printf "${RED}CPU Core(s)${NC}\n"
 echo $CPU_Cores
+printf "${RED}RAM${NC}\n"
 echo $MEM
 printf "${RED}Storage;${NC}\n"
 if [ -z "$HDD" ];
