@@ -11,4 +11,4 @@ set CPU = "NULL"
 set CPU = wmic cpu get name
 
 ::Printing Outputs
-echo "%CPU%"
+echo %CPU%
