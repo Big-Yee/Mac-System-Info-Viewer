@@ -1,14 +1,14 @@
 @echo off
 
-#Vars
+::Vars
 set CPU = "NULL"
 
-#Fancy Colours and Shit
+::Fancy Colours and Shit
 
-#ACTUALLY DOING SHIT
+::ACTUALLY DOING SHIT
 
-#CPU
+::CPU
 set CPU = wmic cpu get name
 
-#Printing Outputs
+::Printing Outputs
 echo "%CPU%"
