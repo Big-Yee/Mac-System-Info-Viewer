@@ -46,20 +46,22 @@ sleep 0.5
 
 #Print Output
 printf "${RED}System Information;${NC}\n"
-echo $IDENT
-echo $SN
-echo $CPU
+dmidecode | grep 'SKU Number' | head -1
+printf "${RED}Serial Number;${NC}\n"
+sudo dmidecode -s system-serial-number
+printf "${RED}CPU;${NC}\n"
+lscpu | grep "Model name"
 printf "${RED}CPU Core(s)${NC}\n"
-echo $CPU_Cores
+lscpu | grep "Core(s)"
 printf "${RED}RAM${NC}\n"
-echo $MEM
+free -m
 printf "${RED}Storage;${NC}\n"
-echo $SD
+lsblk
 printf "${RED}GPU(s);${NC}\n"
-echo $GPU
+lspci -v | grep "VGA"
 printf "${RED}Display(s);${NC}\n"
-echo $DISP
-
+xdpyinfo | grep dimensions
+printf "${RED}Battery Information;${NC}\n"
 upower --enumerate
 upower -i /org/freedesktop/UPower/devices/battery_BAT0
 
