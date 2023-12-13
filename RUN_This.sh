@@ -1,4 +1,4 @@
-#!/bin/bash
+o#!/bin/bash
 
 #Vars
 IDENT="NULL"
@@ -15,10 +15,10 @@ HEALTH="NULL"
 CYC="NULL"
 INPUT="NULL"
 
-printf "The following script will identify the configuration of the system it is running on. In our testing we have found this to be accurate, however there is always the possibility that this information is not correct and advise that you use your judgement to determine if the data presented to you is accurate. \r"
-printf "This script remains the whole property pf and was developed by BigYee Ltd. T/A Palland and Nine Security. HOWEVER as agreed by our Director the source for this script will remain open source and ANY business that wishes to use this is able to without cost aside from the worked hours of the staff maintaining this should they wish for us to add features to this scrript. \r"
-printf "This is to be paid at or above the National Living Wage (NLW) for the United Kindgom and Northern Ireland in compliance with international Modern Slavery legislation. We reserve the right to request further compensation should we deem this appropriate. \r"
-printf "Should you encouter an error with this script or the data reported please submit a bug report here; https://github.com/Big-Yee/Mac-System-Info-Viewer/. The same link can be used to submit feature requests. \r"
+echo "The following script will identify the configuration of the system it is running on. In our testing we have found this to be accurate, however there is always the possibility that this information is not correct and advise that you use your judgement to determine if the data presented to you is accurate. "
+echo "This script remains the whole property pf and was developed by BigYee Ltd. T/A Palland and Nine Security. HOWEVER as agreed by our Director the source for this script will remain open source and ANY business that wishes to use this is able to without cost aside from the worked hours of the staff maintaining this should they wish for us to add features to this scrript. "
+echo "This is to be paid at or above the National Living Wage (NLW) for the United Kindgom and Northern Ireland in compliance with international Modern Slavery legislation. We reserve the right to request further compensation should we deem this appropriate. "
+echo "Should you encouter an error with this script or the data reported please submit a bug report here; https://github.com/Big-Yee/Mac-System-Info-Viewer/. The same link can be used to submit feature requests. "
 
 sleep 3
 
