@@ -67,7 +67,7 @@ echo $'    |     {__)'
 sleep 0.05
 echo $'    |      (_)`'
 sleep 0.05
-echo $'        ^ This is Bert, not Ben!'
+echo $'        ^ This is Bert, not Ben! Bert is a Nark.'
 echo -n''
 printf "\n"
 
