@@ -67,7 +67,7 @@ echo $'    |     {__)'
 sleep 0.05
 echo $'    |      (_)`'
 sleep 0.05
-echo $'.         ()'
+echo $'    .      ()'
 echo $' ^ Not Ben'
 echo -n''
 printf "\n"
