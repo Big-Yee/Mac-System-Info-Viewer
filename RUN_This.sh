@@ -19,6 +19,7 @@ echo "The following script will identify the configuration of the system it is r
 echo "This script remains the whole property pf and was developed by BigYee Ltd. T/A Palland and Nine Security. \nHOWEVER as agreed by our Director the source for this script will remain open source and ANY business that wishes to use this is able to without cost aside from the worked hours of the staff maintaining this should they wish for us to add features to this scrript. \n"
 echo "This is to be paid at or above the National Living Wage (NLW) for the United Kindgom and Northern Ireland in compliance with international Modern Slavery legislation. We reserve the right to request further compensation should we deem this appropriate. \n"
 echo "Should you encouter an error with this script or the data reported please submit a bug report here; https://github.com/Big-Yee/Mac-System-Info-Viewer/. The same link can be used to submit feature requests. \n"
+echo "\n"
 
 sleep 3
 
