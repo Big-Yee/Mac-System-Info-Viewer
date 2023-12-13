@@ -64,9 +64,11 @@ echo $'   `Y-.____(__}'
 sleep 0.05
 echo $'    |     {__)'
 sleep 0.05
-echo $'          (_)`'
+echo $'    |      (_)`'
 sleep 0.05
 echo $'.         ()'
+printf "\n"
+
 
 
 #Fancy Colours and Shit
