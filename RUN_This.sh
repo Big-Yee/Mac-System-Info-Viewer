@@ -21,7 +21,7 @@ printf "This is to be paid at or above the National Living Wage (NLW) for the Un
 printf "Should you encouter an error with this script or the data reported please submit a bug report here; https://github.com/Big-Yee/Mac-System-Info-Viewer/. The same link can be used to submit feature requests. \n"
 printf "\n"
 
-sleep 3
+sleep 1
 
 echo -n''
 echo $''
