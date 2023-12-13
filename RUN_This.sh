@@ -23,9 +23,55 @@ printf "\n"
 
 sleep 3
 
+echo -n''
+echo $''
+sleep 0.1
+echo $'      _,.'
+sleep 0.1
+echo $'    ,` -.)'
+sleep 0.1
+echo $'   \'( _/\'-\\\\-.'
+sleep 0.1
+echo $'  /,|`--._,-^|          ,'
+sleep 0.1
+echo $'  \\_| |`-._/||          ,\'|'
+sleep 0.1
+echo $'    |  `-, / |         /  /'
+sleep 0.1
+echo $'    |     || |        /  /'
+sleep 0.1
+echo $'     `r-._||/   __   /  /'
+sleep 0.1
+echo $' __,-<_     )`-/  `./  /'
+sleep 0.1
+echo $'\'  \\   `---\'   \\   /  /'
+sleep 0.1
+echo $'    |           |./  /'
+sleep 0.1
+echo $'    /           //  /'
+sleep 0.1
+echo $'\\_/\' \\         |/  /'
+sleep 0.1
+echo $' |    |   _,^-\'/  /'
+sleep 0.1
+echo $' |    , ``  (\\/  /_'
+sleep 0.1
+echo $'  \\,.->._    \\X-=/^'
+sleep 0.1
+echo $'  (  /   `-._//^`'
+sleep 0.1
+echo $'   `Y-.____(__}'
+sleep 0.1
+echo $'    |     {__)'
+sleep 0.1
+echo $'          ()`'
+sleep 0.1
+
 #Fancy Colours and Shit
 RED="\033[0;31m"
 NC="\033[0m"
+
+sleep 0.5
 
 #ACTUALLY DOING SHIT
 printf "Identifying system configuration this may take ${RED}some${NC} time...\r"
