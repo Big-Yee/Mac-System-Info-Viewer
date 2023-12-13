@@ -78,7 +78,7 @@ NC="\033[0m"
 sleep 0.5
 
 #ACTUALLY DOING SHIT
-printf "Identifying system configuration this may take ${RED}some${NC} time...\r"
+printf "\nIdentifying system configuration this may take ${RED}some${NC} time...\r"
 IDENT=$(system_profiler SPSoftwareDataType SPHardwareDataType | grep "Model Identifier")
 SN=$(system_profiler SPHardwareDataType)
 printf "Identifying system configuration this may take ${RED}some${NC} time....\r"
