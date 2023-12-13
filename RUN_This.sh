@@ -66,9 +66,8 @@ echo $'    |     {__)'
 sleep 0.05
 echo $'          ()`'
 sleep 0.05
-echo ''
-echo ''
-echo ''
+printf "\n"
+
 
 #Fancy Colours and Shit
 RED="\033[0;31m"
