@@ -68,7 +68,7 @@ echo $'          ()`'
 sleep 0.05
 printf "\n"
 printf "\n"
-
+printf "\n"
 
 
 #Fancy Colours and Shit
