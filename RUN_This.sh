@@ -25,47 +25,48 @@ sleep 3
 
 echo -n''
 echo $''
-sleep 0.1
+sleep 0.05
 echo $'      _,.'
-sleep 0.1
+sleep 0.05
 echo $'    ,` -.)'
-sleep 0.1
+sleep 0.05
 echo $'   \'( _/\'-\\\\-.'
-sleep 0.1
+sleep 0.05
 echo $'  /,|`--._,-^|          ,'
-sleep 0.1
+sleep 0.05
 echo $'  \\_| |`-._/||          ,\'|'
-sleep 0.1
+sleep 0.05
 echo $'    |  `-, / |         /  /'
-sleep 0.1
+sleep 0.05
 echo $'    |     || |        /  /'
-sleep 0.1
+sleep 0.05
 echo $'     `r-._||/   __   /  /'
-sleep 0.1
+sleep 0.05
 echo $' __,-<_     )`-/  `./  /'
-sleep 0.1
+sleep 0.05
 echo $'\'  \\   `---\'   \\   /  /'
-sleep 0.1
+sleep 0.05
 echo $'    |           |./  /'
-sleep 0.1
+sleep 0.05
 echo $'    /           //  /'
-sleep 0.1
+sleep 0.05
 echo $'\\_/\' \\         |/  /'
-sleep 0.1
+sleep 0.05
 echo $' |    |   _,^-\'/  /'
-sleep 0.1
+sleep 0.05
 echo $' |    , ``  (\\/  /_'
-sleep 0.1
+sleep 0.05
 echo $'  \\,.->._    \\X-=/^'
-sleep 0.1
+sleep 0.05
 echo $'  (  /   `-._//^`'
-sleep 0.1
+sleep 0.05
 echo $'   `Y-.____(__}'
-sleep 0.1
+sleep 0.05
 echo $'    |     {__)'
-sleep 0.1
+sleep 0.05
 echo $'          ()`'
-sleep 0.1
+sleep 0.05
+echo ''
 
 #Fancy Colours and Shit
 RED="\033[0;31m"
