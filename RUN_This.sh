@@ -68,6 +68,7 @@ echo $'          ()`'
 sleep 0.05
 echo ''
 echo ''
+echo ''
 
 #Fancy Colours and Shit
 RED="\033[0;31m"
