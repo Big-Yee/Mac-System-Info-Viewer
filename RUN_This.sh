@@ -20,7 +20,9 @@ printf "\n"
 
 sleep 1
 
+
 echo -n''
+echo 
 echo $''
 sleep 0.05
 echo $'      _,.'
@@ -61,9 +63,12 @@ echo $'   `Y-.____(__}'
 sleep 0.05
 echo $'    |     {__)'
 sleep 0.05
-echo $'          ()`'
+echo $'    |      (_)`'
 sleep 0.05
-echo ''
+echo $'    |      ()'
+echo $'        ^ This is Bert, not Ben'
+echo -n''
+printf "\n"
 
 #Fancy Colours and Shit
 RED="\033[0;31m"
