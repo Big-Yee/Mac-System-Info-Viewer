@@ -169,6 +169,8 @@ python3 -m pip install –upgrade pip
 pip3 install mock-open
 pip install gspread
 pip install pandas
+wget 
+python3 main.py
 echo "Installing SmartMonTools..."
 brew install smartmontools && sudo smartctl
 printf "The command will now list all disk to view S.M.A.R.T Attributes of. ${RED}You will be asked to select one of these.${NC}\n"
