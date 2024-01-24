@@ -89,11 +89,45 @@ printf "\nFIND MY IPHONE IS OFF!!!"
 else 
 FINDMY="FIND MY IPHONE ON"
 printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
-x=0
-while [ $x -le 10 ]
-do
-  printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
-  x=$(( $x + 1 ))
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+sleep 0.1
 fi 
 echo $FINDMY > findmy.txt
 sleep 1
