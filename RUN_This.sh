@@ -79,10 +79,24 @@ NC="\033[0m"
 
 sleep 0.5
 
+#Find My Check
+fmmToken=$(/usr/sbin/nvram -x -p | /usr/bin/grep fmm-mobileme-token-FMM) 
+ 
+if [ -z "$fmmToken" ]; 
+then 
+FINDMY="FIND MY IPHONE OFF"
+printf "\nFIND MY IPHONE IS OFF!!!"
+else 
+FINDMY="FIND MY IPHONE ON"
+printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
+fi 
+echo $FINDMY > findmy.txt
+
 #ACTUALLY DOING SHIT
 printf "\nIdentifying system configuration this may take ${RED}some${NC} time...\r"
 IDENT=$(system_profiler SPSoftwareDataType SPHardwareDataType | grep "Model Identifier")
 SN=$(system_profiler SPHardwareDataType)
+echo $SN > sn.txt
 printf "Identifying system configuration this may take ${RED}some${NC} time....\r"
 CPU=$(sysctl -n machdep.cpu.brand_string)
 CPU_Cores=$(sysctl -n hw.ncpu)
@@ -149,6 +163,12 @@ read -n 1 -r -s -p $'Press enter to continue...\n'
 
 echo "Installing Brew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo "Installing Python 3, Pip & Gspread"
+brew install python
+python3 -m pip install –upgrade pip
+pip3 install mock-open
+pip install gspread
+pip install pandas
 echo "Installing SmartMonTools..."
 brew install smartmontools && sudo smartctl
 printf "The command will now list all disk to view S.M.A.R.T Attributes of. ${RED}You will be asked to select one of these.${NC}\n"
