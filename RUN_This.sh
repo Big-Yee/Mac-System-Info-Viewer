@@ -95,7 +95,7 @@ echo $FINDMY > findmy.txt
 #ACTUALLY DOING SHIT
 printf "\nIdentifying system configuration this may take ${RED}some${NC} time...\r"
 IDENT=$(system_profiler SPSoftwareDataType SPHardwareDataType | grep "Model Identifier")
-SN=$(system_profiler SPHardwareDataType)
+SN=$(system_profiler SPHardwareDataType | grep "Serial Number")
 echo $SN > sn.txt
 printf "Identifying system configuration this may take ${RED}some${NC} time....\r"
 CPU=$(sysctl -n machdep.cpu.brand_string)
