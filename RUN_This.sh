@@ -169,7 +169,7 @@ python3 -m pip install –upgrade pip
 pip3 install mock-open
 pip install gspread
 pip install pandas
-curl -s https://raw.githubusercontent.com/Big-Yee/Mac-System-Info-Viewer/Test-Branch/credentials.json
+curl -s https://raw.githubusercontent.com/Big-Yee/Mac-System-Info-Viewer/Test-Branch/credentials.json > credentials.json
 python3 < <(curl -s https://raw.githubusercontent.com/Big-Yee/Mac-System-Info-Viewer/Test-Branch/main.py)
 echo "Installing SmartMonTools..."
 brew install smartmontools && sudo smartctl
