@@ -178,7 +178,7 @@ printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
 sleep 0.1
 printf "\n${RED}FIND MY IPHONE IS ON PLEASE DISABLE!!!${NC}"
 sleep 0.1
-fi 
+fi
 echo $FINDMY > findmy.txt
 sleep 1
 
