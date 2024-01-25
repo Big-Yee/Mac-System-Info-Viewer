@@ -196,6 +196,7 @@ sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/insta
 echo "Installing Python 3, Pip & Gspread"
 brew install python
 python3 -m pip install –upgrade pip
+python3.11 -m pip install --upgrade pip
 pip3 install mock-open
 pip install gspread
 pip install pandas
