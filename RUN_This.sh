@@ -192,7 +192,7 @@ sleep 0.5
 read -n 1 -r -s -p $'Press enter to continue...\n'
 
 echo "Installing Brew..."
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo "Installing Python 3, Pip & Gspread"
 brew install python
 python3 -m pip install –upgrade pip
