@@ -189,6 +189,7 @@ echo $HEALTH
 
 sleep 0.5
 
+#The above is a super BETA part of the utility. 
 #read -n 1 -r -s -p $'Press enter to continue...\n'
 
 #echo "Installing Brew..."
