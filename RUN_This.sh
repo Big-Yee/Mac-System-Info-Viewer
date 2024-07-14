@@ -189,19 +189,19 @@ echo $HEALTH
 
 sleep 0.5
 
-read -n 1 -r -s -p $'Press enter to continue...\n'
+#read -n 1 -r -s -p $'Press enter to continue...\n'
 
-echo "Installing Brew..."
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo "Installing Python 3, Pip & Gspread"
-brew install python
-python3 -m pip install –upgrade pip
-python3.11 -m pip install --upgrade pip
-pip3 install mock-open
-pip install gspread
-pip install pandas
-curl -s https://raw.githubusercontent.com/Big-Yee/Mac-System-Info-Viewer/Test-Branch/credentials.json > credentials.json
-python3 < <(curl -s https://raw.githubusercontent.com/Big-Yee/Mac-System-Info-Viewer/Test-Branch/main.py)
+#echo "Installing Brew..."
+#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#echo "Installing Python 3, Pip & Gspread"
+#brew install python
+#python3 -m pip install –upgrade pip
+#python3.11 -m pip install --upgrade pip
+#pip3 install mock-open
+#pip install gspread
+#pip install pandas
+#curl -s https://raw.githubusercontent.com/Big-Yee/Mac-System-Info-Viewer/Test-Branch/credentials.json > credentials.json
+#python3 < <(curl -s https://raw.githubusercontent.com/Big-Yee/Mac-System-Info-Viewer/Test-Branch/main.py)
 echo "Installing SmartMonTools..."
 brew install smartmontools && sudo smartctl
 printf "The command will now list all disk to view S.M.A.R.T Attributes of. ${RED}You will be asked to select one of these.${NC}\n"
