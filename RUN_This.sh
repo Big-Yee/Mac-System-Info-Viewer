@@ -1,4 +1,4 @@
-o#!/bin/bash
+#!/bin/bash
 
 #Vars
 IDENT="NULL"
